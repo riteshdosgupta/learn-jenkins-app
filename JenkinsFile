@@ -11,8 +11,7 @@ pipeline {
             }
             steps {
                 sh '''
-                    // comments 1
-                    
+                                       
                     ls -lart
                     node --version
                     npm --version
@@ -47,7 +46,7 @@ pipeline {
             steps {
                 echo "Deploy  Stage"
                 sh '''
-                    npm install netlify-cli -g
+                    npm install netlify-cli
                     netlify --version
                 '''
             }
